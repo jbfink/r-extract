@@ -1,1 +1,2 @@
-poetry run python zhou-test.py
+#!/bin/bash
+poetry run python $1
