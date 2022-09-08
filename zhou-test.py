@@ -15,11 +15,10 @@ filename = 'url-list.csv'
 with open(filename, 'r') as csvfile:
     datareader = list(csv.reader(csvfile, delimiter=","))
     print(datareader)
-    real_list = datareader[0]
-    print(real_list)
+    datareader = datareader[0]
     print(type(datareader))
     #number = 1
-    for item in real_list:
+    for item in datareader:
         print(item)
         #number = number + 1
 

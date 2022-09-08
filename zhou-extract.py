@@ -13,9 +13,10 @@ urls = 'url-list.csv'
 
 with open(urls, 'r') as csvfile:
     datareader = list(csv.reader(csvfile, delimiter = ","))
+    datareader = datareader[0]
     number = 1
     for row in datareader:
-        submission = reddit.submission(url=row[number])
+        submission = reddit.submission(url=row)
         submission.comments.replace_more(limit=None)
         comments = submission.comments.list()
         df_rows = [[comment.author, comment.id, comment.score, comment.body] for comment in comments]
