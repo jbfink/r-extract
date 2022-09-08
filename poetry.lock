@@ -18,6 +18,14 @@ python-versions = ">=3.6.0"
 unicode_backport = ["unicodedata2"]
 
 [[package]]
+name = "idle"
+version = "1.0.4"
+description = "Alternavtive of notepad"
+category = "main"
+optional = false
+python-versions = ">=3.6"
+
+[[package]]
 name = "idna"
 version = "3.3"
 description = "Internationalized Domain Names in Applications (IDNA)"
@@ -176,11 +184,12 @@ docs = ["sphinx-rtd-theme (>=0.5)", "Sphinx (>=3.4)"]
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.10"
-content-hash = "5d91ddc7ad83539eb31def2a9349bdce07152fb1a87ce7688b80837a698aff55"
+content-hash = "f2cd4ebb2db081433a0b168168effe7c7bdcceb299a57d2f68d7a07e15d05ab4"
 
 [metadata.files]
 certifi = []
 charset-normalizer = []
+idle = []
 idna = []
 numpy = []
 pandas = []
