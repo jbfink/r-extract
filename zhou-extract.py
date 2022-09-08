@@ -12,16 +12,17 @@ reddit = praw.Reddit("zhou-rscrape",
 urls = 'url-list.csv'
 
 with open(urls, 'r') as csvfile:
-    datareader = csv.reader(csvfile)
+    datareader = list(csv.reader(csvfile, delimiter = ","))
+    number = 1
     for row in datareader:
-        number = 1
         submission = reddit.submission(url=row[number])
         submission.comments.replace_more(limit=None)
         comments = submission.comments.list()
         df_rows = [[comment.author, comment.id, comment.score, comment.body] for comment in comments]
         df = pd.DataFrame(df_rows, columns=['Author', 'Comment ID', 'Score', 'Body', ])
-        df.to_csv('notgonnawork.csv')
+        df.to_csv(f'file{number}.csv')
         number = number + 1
+        print(number)
 
  
 
