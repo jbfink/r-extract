@@ -4,3 +4,8 @@ Please note that this program requires you to have a Reddit account and access t
 
 The dependencies in the project are handled by [Poetry](https://python-poetry.org/) -- make sure you have an up to date Python 3 and Poetry installed, and then ```poetry install``` to install the depencies. After that, merely put the URLs you want to scrape in ```url-list.csv``` -- be sure to follow the format of URLs separated by commas -- and then run ```poetry run python reddit-extract.py```. The output will be in files named ```file[number].csv``` -- e.g., the first url will be ```file1.csv```, the second ```file2.csv```, and so on.
 
+
+POSSIBLE FUTURE ENHANCEMENTS:
+
+* Jupyter support
+* Making it so the URL list can be a straight text file, one URL per line.
