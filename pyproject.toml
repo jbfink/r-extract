@@ -1,14 +1,13 @@
 [tool.poetry]
-name = "zhou-reddit"
+name = "reddit-extract"
 version = "0.1.0"
-description = ""
+description = "A simple python reddit comment scraper."
 authors = ["jbfink <john.fink@gmail.com>"]
 
 [tool.poetry.dependencies]
 python = "^3.10"
 praw = "^7.6.0"
 pandas = "^1.4.4"
-black = "^22.8.0"
 
 [tool.poetry.dev-dependencies]
 

@@ -1,3 +1,4 @@
 praw.ini
 small.csv
 file*.csv
+poetry.lock

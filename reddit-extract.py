@@ -3,7 +3,7 @@ import csv
 import pandas as pd
 
 
-reddit = praw.Reddit("zhou-rscrape", user_agent="zhou-rscrape")
+reddit = praw.Reddit("reddit-extract", user_agent="reddit-extract")
 
 urls = "url-list.csv"
 
